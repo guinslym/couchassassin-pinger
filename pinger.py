@@ -3,6 +3,7 @@
 
 from datetime import date
 import time
+from random import randint
 
 ___author__= 'Guinsly Mondesir'
 
@@ -25,7 +26,6 @@ def how_many_time_to_visit_this_url(url='http://couchassassin.com/event/black-bl
     Between each visits
     wait some seconds
     """
-    from random import randint
     number = randint(1,20)
     print("number of visit " + str(number))
     for num in range(number):
