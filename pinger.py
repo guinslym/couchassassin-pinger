@@ -30,8 +30,8 @@ def how_many_time_to_visit_this_url(url='http://couchassassin.com/event/black-bl
     print("number of visit " + str(number))
     for num in range(number):
         visit_url(url)
-        seconde = randint(1,25)
-        print("sleeping for " + str(seconde) + "sec.")
+        seconde = randint(1,120)
+        print("sleeping for " + str(seconde) + " sec.")
         time.sleep(seconde)
 
 
