@@ -63,20 +63,18 @@ def visit_url(url):
         import urllib3
         http = urllib3.PoolManager()
         html = http.request('GET', url)
-    print(html)
 
 def how_many_time_to_visit_this_url(url='http://couchassassin.com/event/black-bluegrass-fest-2016'):
     """
     Between each visits
     wait some seconds
     """
-    number = randint(1,10)
+    number = randint(1,20)
     app_log.info("==number of visit === " + str(number))
     counter = 0
     for num in range(number):
         visit_url(url)
-        seconde = randint(1,5)
-        print("sleeping for " + str(seconde) + " sec.")
+        seconde = randint(1,181)
         app_log.info("counter : {0}/{1} for {2} sec.".format(counter,number,str(seconde)))
         app_log.info("sleeping for " + str(seconde) + " sec.")
         time.sleep(seconde)
