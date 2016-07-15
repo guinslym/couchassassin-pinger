@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import socket
 from datetime import date
 import time
 
@@ -32,7 +31,7 @@ def how_many_time_to_visit_this_url():
     for num in range(number):
         url = 'http://couchassassin.com/event/black-bluegrass-fest-2016'
         visit_url(url)
-        seconde = randint(1,5)
+        seconde = randint(1,25)
         print("sleeping for " + str(seconde) + "sec.")
         time.sleep(seconde)
 
