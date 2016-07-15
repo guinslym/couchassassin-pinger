@@ -20,7 +20,7 @@ def visit_url(url):
         html = http.request('GET', url)
     print(html)
 
-def how_many_time_to_visit_this_url():
+def how_many_time_to_visit_this_url(url='http://couchassassin.com/event/black-bluegrass-fest-2016'):
     """
     Between each visits
     wait some seconds
@@ -29,7 +29,6 @@ def how_many_time_to_visit_this_url():
     number = randint(1,20)
     print("number of visit " + str(number))
     for num in range(number):
-        url = 'http://couchassassin.com/event/black-bluegrass-fest-2016'
         visit_url(url)
         seconde = randint(1,25)
         print("sleeping for " + str(seconde) + "sec.")
